@@ -1,0 +1,28 @@
+- clean:
+    - "~"
+    - "~/.config"
+    - "~/.local/bin"
+
+- defaults:
+    - brewfile:
+        - stdout: true,
+    - brew:
+        - auto_bootstrap: true
+        - stderr: False,
+        - stdout: False,
+    - link:
+      create: true
+      force: true
+      relink: true
+
+- brewfile:
+    - Brewfile
+    - brew/Brewfile
+
+- pipx:
+    file: requirements-pipx.txt
+    stdout: false
+    stderr: true
+
+- shell:
+    command: fish/setup.sh
