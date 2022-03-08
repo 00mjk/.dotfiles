@@ -24,7 +24,6 @@ plugins=(
     zsh-syntax-highlighting
     docker
     docker-compose
-    zsh-completions
     zoxide
     fzf-tab)
 
