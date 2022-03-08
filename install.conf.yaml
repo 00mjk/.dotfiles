@@ -24,5 +24,4 @@
     stdout: false
     stderr: true
 
-- shell:
-    command: fish/setup.sh
+- link:
