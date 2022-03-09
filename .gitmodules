@@ -2,9 +2,6 @@
 	path = .dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "dotbot-brew"]
-	path = .dotbot-brew
-	url = https://github.com/wren/dotbot-brew.git
 [submodule "dotbot-pip"]
 	path = .dotbot-pip
 	url = https://github.com/sobolevn/dotbot-pip.git
@@ -23,3 +20,6 @@
 [submodule "zsh/plugins/fzf-tab"]
 	path = zsh/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab.git
+[submodule "dotbot-brew"]
+	path = .dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
