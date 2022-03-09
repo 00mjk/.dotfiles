@@ -1,7 +1,6 @@
 - defaults:
     link:
       relink: true
-      ignore-missing: true
       force: true
       create: true
       quiet: true
@@ -17,7 +16,6 @@
 
 - shell:
     - [chsh -s $(which zsh), Making zsh the default shell]
-    - [git submodule update --init --recursive, Installing submodules]
 
 - brewfile:
     - brew/Brewfile
