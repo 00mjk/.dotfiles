@@ -1,10 +1,10 @@
 - defaults:
-    - brewfile:
-        - stdout: true,
-    - brew:
-        - auto_bootstrap: true
-        - stderr: true,
-        - stdout: true,
+    # - brewfile:
+    #     - stdout: true,
+    # - brew:
+    #     - auto_bootstrap: true
+    #     - stderr: true,
+    #     - stdout: true,
     - link:
       create: true
       force: true
@@ -13,10 +13,7 @@
         - stderr: true,
         - stdout: true,
 
-- clean:
-    - "~"
-    - "~/.config"
-    - "~/.local/bin"
+- clean: ["~"]
 
 - shell:
     - [chsh -s $(which zsh), Making zsh the default shell]
