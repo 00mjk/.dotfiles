@@ -3,12 +3,15 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-
+tap "homebrew/core"
+tap "homebrew/services"
+brew "ansifilter"
 brew "bat"
+brew "bfg"
 brew "bottom"
+brew "cpanminus"
 brew "exa"
 brew "fzf"
-brew "gcc"
 brew "go"
 brew "k9s"
 brew "krew"
@@ -16,14 +19,22 @@ brew "kubectx"
 brew "kubeseal"
 brew "kubeval"
 brew "kustomize"
+brew "mas"
+brew "mosh"
+brew "node"
+brew "perl"
 brew "python@3.10", link: true
 brew "pipx"
+brew "postgresql", restart_service: true
 brew "redis"
+brew "rename"
 brew "ripgrep"
 brew "ruby"
+brew "smartmontools"
 brew "stern"
+brew "tmux"
+brew "wakeonlan"
 brew "zoxide"
-
 cask "blender"
 cask "datagrip"
 cask "deepl"
@@ -40,10 +51,24 @@ cask "obs"
 cask "qmk-toolbox"
 cask "signal"
 cask "spotify"
+cask "tikzit"
 cask "tor-browser"
+cask "unshaky"
 cask "visual-studio-code"
+cask "zoom"
 cask "zotero"
-
+mas "Adobe Lightroom", id: 1451544217
+mas "AusweisApp2", id: 948660805
 mas "Bitwarden", id: 1352778147
+mas "GoodNotes", id: 1444383602
+mas "Home Assistant", id: 1099568401
+mas "Key Codes", id: 414568915
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft OneNote", id: 784801555
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
+mas "Outbank", id: 1094255754
+mas "Pixelmator Pro", id: 1289583905
+mas "Telegram", id: 747648890
 mas "WhatsApp", id: 1147396723
