@@ -30,8 +30,8 @@
     ~/.oh-my-zsh: zsh/oh-my-zsh/
     ~/.oh-my-zsh/custom/themes/: zsh/themes/
     ~/.oh-my-zsh/custom/plugins/: zsh/plugins/
-    ~/.zshrc: zsh/zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.aliases: zsh/aliases
     ~/.functions: zsh/functions
     ~/.fzf_conf.zsh: zsh/fzf_conf.zsh
+    ~/.zshrc: zsh/zshrc
