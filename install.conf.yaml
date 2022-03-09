@@ -1,19 +1,19 @@
-# - defaults:
-#     # - brewfile:
-#     #     - stdout: true,
-#     # - brew:
-#     #     - auto_bootstrap: true
-#     #     - stderr: true,
-#     #     - stdout: true,
-#     - link:
-#       create: true
-#       force: true
-#       relink: true
-#     - shell:
-#         - stderr: true,
-#         - stdout: true,
+- defaults:
+    - brewfile:
+        - stdout: true,
+    - brew:
+        - auto_bootstrap: true
+        - stderr: true,
+        - stdout: true,
+    - link:
+      create: true
+      force: true
+      relink: true
 
-- clean: ["~"]
+- clean:
+    - "~"
+    - "~/.config"
+    - "~/.local/bin"
 
 - shell:
     - [chsh -s $(which zsh), Making zsh the default shell]
