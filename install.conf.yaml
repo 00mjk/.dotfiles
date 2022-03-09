@@ -1,8 +1,3 @@
-- clean:
-    - "~"
-    - "~/.config"
-    - "~/.local/bin"
-
 - defaults:
     - brewfile:
         - stdout: true,
@@ -14,6 +9,14 @@
       create: true
       force: true
       relink: true
+
+- clean:
+    - "~"
+    - "~/.config"
+    - "~/.local/bin"
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
 
 - brewfile:
     - Brewfile
