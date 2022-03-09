@@ -1,14 +1,14 @@
 - defaults:
-    - brewfile:
-        - stdout: true,
-    - brew:
-        - auto_bootstrap: true
-        - stderr: true,
-        - stdout: true,
-    - link:
-      create: true
-      force: true
+    link:
       relink: true
+      ignore-missing: true
+      force: true
+      create: true
+      quiet: true
+    shell:
+      stdin: false
+      stdout: true
+      stderr: true
 
 - clean:
     - "~"
