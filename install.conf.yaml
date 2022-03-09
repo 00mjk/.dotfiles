@@ -9,6 +9,9 @@
       create: true
       force: true
       relink: true
+    - shell:
+        - stderr: true,
+        - stdout: true,
 
 - clean:
     - "~"
@@ -16,6 +19,7 @@
     - "~/.local/bin"
 
 - shell:
+    - [chsh -s $(which zsh), Making zsh the default shell]
     - [git submodule update --init --recursive, Installing submodules]
 
 - brewfile:
