@@ -8,8 +8,8 @@
         - stdout: true,
     - brew:
         - auto_bootstrap: true
-        - stderr: False,
-        - stdout: False,
+        - stderr: true,
+        - stdout: true,
     - link:
       create: true
       force: true
@@ -20,8 +20,6 @@
     - brew/Brewfile
 
 - pipx:
-    file: requirements-pipx.txt
-    stdout: false
+    file: pipx/requirements-pipx.txt
+    stdout: true
     stderr: true
-
-- link:
