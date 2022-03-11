@@ -3,19 +3,12 @@
       relink: true
       force: true
       create: true
-      quiet: true
-    shell:
-      stdin: false
-      stdout: true
-      stderr: true
+      glob: true
 
 - clean:
     - "~"
     - "~/.config"
     - "~/.local/bin"
-
-- shell:
-    - [chsh -s $(which zsh), Making zsh the default shell]
 
 - brewfile:
     - brew/Brewfile
@@ -27,11 +20,11 @@
 
 - link:
     # zsh
-    ~/.oh-my-zsh: zsh/oh-my-zsh/
-    ~/.oh-my-zsh/custom/themes/: zsh/themes/
-    ~/.oh-my-zsh/custom/plugins/: zsh/plugins/
-    ~/.p10k.zsh: p10k.zsh
-    ~/.aliases: zsh/aliases
-    ~/.functions: zsh/functions
+    ~/.oh-my-zsh/: zsh/ohmyzsh/**
+    ~/.oh-my-zsh/custom/themes/: zsh/themes/**
+    ~/.oh-my-zsh/custom/plugins/: zsh/plugins/**
+    ~/.p10k.zsh: zsh/p10k.zsh
+    ~/.aliases: zsh/aliases.zsh
+    ~/.functions: zsh/functions.zsh
     ~/.fzf_conf.zsh: zsh/fzf_conf.zsh
     ~/.zshrc: zsh/zshrc
