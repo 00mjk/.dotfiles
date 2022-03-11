@@ -1,8 +1,8 @@
 - defaults:
     link:
       relink: true
-      force: true
       create: true
+      force: true
       glob: true
 
 - clean:
@@ -21,10 +21,10 @@
 - link:
     # zsh
     ~/.oh-my-zsh/: zsh/ohmyzsh/**
-    ~/.oh-my-zsh/custom/themes/: zsh/themes/**
-    ~/.oh-my-zsh/custom/plugins/: zsh/plugins/**
+    ~/.oh-my-zsh_custom/themes/: zsh/themes/**
+    ~/.oh-my-zsh_custom/plugins/: zsh/plugins/**
     ~/.p10k.zsh: zsh/p10k.zsh
-    ~/.aliases: zsh/aliases.zsh
-    ~/.functions: zsh/functions.zsh
+    ~/.aliases.zsh: zsh/aliases.zsh
+    ~/.functions.zsh: zsh/functions.zsh
     ~/.fzf_conf.zsh: zsh/fzf_conf.zsh
     ~/.zshrc: zsh/zshrc
