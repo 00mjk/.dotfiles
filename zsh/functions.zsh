@@ -45,7 +45,7 @@ function extract() {
 
 # Updates stuff!
 function update() {
-    if ommand_exists apt; then
+    if command_exists apt; then
         heading "[apt] Updating system packages..."
         sudo bash -c "apt update && apt upgrade && apt clean && apt autoremove"
     elif command_exists brew; then
