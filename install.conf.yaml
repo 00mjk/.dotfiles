@@ -29,5 +29,8 @@
     ~/.fzf_conf.zsh: zsh/fzf_conf.zsh
     ~/.zshrc: zsh/zshrc
 
+    # krew
+    ~/.krew/krewfile: krew/krewfile
+
 - shell:
-    - [kubectl krew install < ~/krew/krewfile]
+    - [kubectl krew install < ~/.krew/krewfile]
