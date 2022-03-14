@@ -28,3 +28,6 @@
     ~/.functions.zsh: zsh/functions.zsh
     ~/.fzf_conf.zsh: zsh/fzf_conf.zsh
     ~/.zshrc: zsh/zshrc
+
+- shell:
+    - [kubectl krew install < ~/krew/krewfile]
