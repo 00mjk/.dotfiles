@@ -28,7 +28,6 @@ brew "python@3.10", link: true
 brew "pipx"
 brew "postgresql", restart_service: true
 brew "redis"
-brew "rename"
 brew "ripgrep"
 brew "ruby"
 brew "smartmontools"
