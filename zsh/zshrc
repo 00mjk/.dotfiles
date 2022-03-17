@@ -40,4 +40,8 @@ source $HOME/.functions.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH=$PATH:$HOME/bin
 
+# pipx
 export PATH="$PATH:$HOME/.local/bin"
+
+# krew
+export PATH="${PATH}:${HOME}/.krew/bin"
